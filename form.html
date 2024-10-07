@@ -26,34 +26,34 @@
     </header>
 
     <div class="body-2">
-        <form class="row g-3" method="post" action="submit2.php" novalidate class="needs-validation">
+        <form class="row g-3" action="https://formspree.io/f/{form_id}" method="post"  novalidate class="needs-validation">
             <div class="col-md-6">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" name="Name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
                 
             </div>
 
             <div class="col-md-6">
-                <label for="number" class="form-label">Mobile</label>
+                <label for="number" name="number" class="form-label">Mobile</label>
                 <input type="text" class="form-control" id="number" name="mobile" required>
                
             </div>
 
             <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" name="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="john@gmail.com" name="email" required>
               
             </div>
 
             <div class="col-md-6">
-                <label for="field" class="form-label">Field</label>
+                <label for="field" name="field" class="form-label">Field</label>
                 <select id="field" class="form-select" name="field">
                     <option selected>Electronics</option>
                     <option>Electrical</option>
                 </select>
             </div>
             <div class="col-md-6 ">
-                <label for="pcbType" class="form-label">PCB Type</label>
+                <label for="pcbType" name="form-select" class="form-label">PCB Type</label>
                 <select id="pcbType" class="form-select" name="pcbType">
                     <option selected>Zero PCB</option>
                     <option>Single PCB</option>
@@ -64,7 +64,7 @@
             <input type="hidden" name="recipient_email" value="tgoud00@gmail.com">
 
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>
